@@ -1,0 +1,18 @@
+@font-face {  
+    font-family: 'PingFang SC';
+    src: url('PingFang-Bold-2.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}
+@font-face {  
+  font-family: 'Kaushan Script';
+  src: url('KaushanScript-Regular.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'Consola';
+  src: url('consola-1.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}

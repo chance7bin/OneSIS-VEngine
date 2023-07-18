@@ -211,14 +211,9 @@ const initMap = () => {
         trackUserLocation: true,
       })
     );
-    mapbox.map.on('zoomend', () => {
-      console.log('A zoomend event occurred.');
-    });
     mapbox.map.on('load', () => {
       console.log("地图初始化成功！正在加载场景配置项...")
-      setTimeout(() => {
         resolve("地图初始化成功！正在加载场景配置项...")
-      }, 1000)
     })
   })
 }
@@ -236,9 +231,7 @@ const requestMapConfig = () => {
       sceneLayersGroup.value = res.data.sceneLayerGroup
       toolLab.value = res.data.sceneToolLab
       console.log(toolLab.value)
-      setTimeout(() => {
         resolve("地图场景配置项加载完毕！正在渲染数据...")
-      }, 1000)
     })
   })
 }
@@ -248,9 +241,7 @@ const renderSceneLayersInMap = () => {
       console.log(res)
       flyToDataBounds()
     })
-    setTimeout(() => {
       resolve('图层渲染完毕！')
-    }, 1000)
   })
 }
 const loadLayersToMap = () => {
@@ -364,9 +355,7 @@ const beforeSceneSave = () => {
       }
     }).then(res => {
       if (res.code === 200) {
-        setTimeout(() => {
           resolve("保存场景成功！")
-        }, 2000)
       }
     })
     // console.log(file)

@@ -107,6 +107,7 @@ class UniqueValueRender {
       paintExpressionArr.push(colorRampArray[index])
     }
     paintExpressionArr.push('#000000')
+    console.log(paintExpressionArr)
     Object.keys(layout).forEach(key => {
       this.map.setLayoutProperty(layerId, key, layout[key])
     })

@@ -1,19 +1,40 @@
-# Vue 3 + TypeScript + Vite
+# OneSIS地图可视化引擎
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
+## 项目介绍
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+可视化引擎实现了不同数据源（`PostGIS` / `MBTiles` / `GeoServer`）的接入，基于`Mapbox Style Specification`所定义的图层样式结构，通过多种可视化组件的定制和可视化模板的配置来实现多场景的数据可视化表达
 
-## Type Support For `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## 关键技术
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+可视化引擎主要使用`Mapbox GL JS`的API，参考`Mapbox`的样式规范`Mapbox Style Specification`
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-# OneSIS-VEngine
+详细配置请参考[mapbox官网](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/)
+
+## 系统功能
+
+
+
+#### 场景列表
+![3](./doc/images/3.png)
+
+#### 场景创建
+![5](./doc/images/5.png)
+
+
+#### 场景编辑
+
+>通过可视化组件的定制和可视化模板的配置来实现多场景的数据可视化表达
+
+![4](./doc/images/4.png)
+
+#### 数据资源列表
+
+![1](./doc/images/1.png)
+
+#### 数据上传
+
+>shapefile格式的压缩包导入pg中
+
+![2](./doc/images/2.png)

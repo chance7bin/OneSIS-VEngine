@@ -17,24 +17,24 @@
 
 
 #### 场景列表
-![3](./doc/images/3.png)
+![](https://blog-images-1301988137.cos.ap-nanjing.myqcloud.com/blog/2207/202307181622751.png)
 
 #### 场景创建
-![5](./doc/images/5.png)
+![](https://blog-images-1301988137.cos.ap-nanjing.myqcloud.com/blog/2207/202307181623276.png)
 
 
 #### 场景编辑
 
 >通过可视化组件的定制和可视化模板的配置来实现多场景的数据可视化表达
 
-![4](./doc/images/4.png)
+![](https://blog-images-1301988137.cos.ap-nanjing.myqcloud.com/blog/2207/202307181623551.png)
 
 #### 数据资源列表
 
-![1](./doc/images/1.png)
+![](https://blog-images-1301988137.cos.ap-nanjing.myqcloud.com/blog/2207/202307181623716.png)
 
 #### 数据上传
 
 >shapefile格式的压缩包导入pg中
 
-![2](./doc/images/2.png)
+![](https://blog-images-1301988137.cos.ap-nanjing.myqcloud.com/blog/2207/202307181623924.png)
